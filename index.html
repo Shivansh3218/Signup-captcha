@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body class="body">
+  <header>
+
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="label">
+      <i class="fas fa-moon"></i>
+      <i class='fas fa-sun'></i>
+      <div class='ball'>
+    </label>
+
+  </header>
+  <div class="signup-page ">
+    <div class="animation-sun active sun">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_64okjrr7.json" background="transparent"
+        speed="1" style="width: 50vw; height: 50vh;" loop autoplay></lottie-player>
+    </div>
+    <div class='moon' class="animation-moon inactive">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player id="lottie-player" src="https://assets2.lottiefiles.com/packages/lf20_rhnmhzwj.json"
+        background="transparent" speed="1" loop autoplay></lottie-player>
+    </div>
+
+    <div class="form">
+      <form>
+        <input type="text" placeholder="full name" />
+        <input type="text" placeholder="email address" />
+        <input type="text" placeholder="pick a username" />
+        <input type="password" id="password" placeholder="set a password" />
+        <div class="container">
+          <div class="wrapper-captcha">
+            <canvas id="canvas" width="220" height="60"></canvas>
+            <button id="reload-button"><i class="fa fa-refresh" aria-hidden="true"></i>
+            </button>
+          </div>
+          <br>
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Enter the text in the image"
+          />
+        </div>
+      </form>
+
+      <form class="signup-form">
+        <button type="button" class="btn"   id="submit">
+          SIGN UP
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
